@@ -1,0 +1,37 @@
+
+exports.seed = async function(knex) {
+  await knex("tasks").insert([
+    { task_description: "Deep Clean Fridge",
+      task_notes: "Declutter expired food",
+      task_completed: true,
+      project_id: 1 },
+    { task_description: "Deep Clean Pantry",
+      task_notes: "Declutter expired food",
+      task_completed: false,
+      project_id: 1 },
+    { task_description: "Shiny Sink",
+      task_notes: "Deep Clean Sink",
+      task_completed: true,
+      project_id: 1 },
+    { task_description: "Deep Clean Tub",
+      task_notes: "Use comet for tough stains",
+      task_completed: true,
+      project_id: 2 },
+    { task_description: "Declutter",
+      task_notes: "Declutter expired medicines, products, and makeup",
+      task_completed: false,
+      project_id: 2 },
+    { task_description: "Mirrors and Doors",
+      task_notes: "Clean all mirrors and doors",
+      task_completed: true,
+      project_id: 2 },
+    { task_description: "Declutter Three-Tier Organizer",
+      task_notes: "Get rid of anything that goes unused",
+      task_completed: true,
+      project_id: 3 },
+    { task_description: "Declutter Bookcase",
+      task_notes: "Donate anything I no longer use",
+      task_completed: false,
+      project_id: 3 }
+  ])
+};
